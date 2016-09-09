@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="News" table="news">
+        <id name="id" type="int" column="news_id">
+            <generator class="native"/>
+        </id>
+        <property name="title" column="news_title" type="string"/>
+        <property name="shortText" column="news_short_text" type="string"/>
+        <property name="fullText" column="news_full_text" type="string"/>
+        <property name="newsCreationDate" column="news_creation_date" type="timestamp"/>
+        <property name="newsModificationDate" column="news_modification_date" type="date"/>
+
+    </class>
+</hibernate-mapping>
